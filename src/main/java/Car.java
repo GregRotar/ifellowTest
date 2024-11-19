@@ -1,3 +1,5 @@
+import static jdk.internal.org.jline.reader.impl.LineReaderImpl.CompletionType.List;
+
 public abstract class Car {
 
 abstract class Car {
@@ -21,7 +23,7 @@ abstract class Car {
             return String.format("Год выпуска: %d, Цвет: %s, Тип кузова: %s, Тип коробки передач: %s, Привод: %s, Тип двигателя: %s",
                     year, color, bodyType, transmissionType, driveType, engineType);
         }
-        public static void changeColorIfGreen(List< Car > cars) {
+        static void changeColorIfGreen;(List< Car > cars) {
             for (Car car : cars) {
                 if (car.getColor().equals("зеленый")) {
                     car.setColor("красный");
