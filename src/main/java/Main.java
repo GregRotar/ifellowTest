@@ -1,6 +1,5 @@
 public class Main {
-    public class Main {
-        //it's Main origin
+        //it's hotfix origin
         public static void main(String[] args)
 
     }
